@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trade With Munaaf | Free Stock Market Learning</title>
+<meta name="description" content="Learn trading basics in Telugu & English with Trade With Munaaf. Educational content only.">
+<meta name="theme-color" content="#e9eef6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Instrument+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2317208578839203');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2317208578839203&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  /* Theme: FROSTED DAYLIGHT — light frosted glass on soft blue-grey, deep indigo CTA, mint ticks; calm, centered */
+  :root{
+    color-scheme:light;
+    --bg:#e9eef6; --panel:rgba(255,255,255,.62); --edge:rgba(255,255,255,.85);
+    --text:#14182b; --muted:#5d6580; --soft:#323a55;
+    --indigo:#3b4cca; --indigo-d:#2f3fb3; --mint:#16a37f; --line:rgba(20,24,43,.08);
+    --te:"Noto Sans Telugu","Gautami","Vani",-apple-system,"Segoe UI",Roboto,sans-serif;
+    --en:"Instrument Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--te);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+       min-height:100vh;overflow-x:hidden;
+       background-image:radial-gradient(circle at 15% 10%,rgba(59,76,202,.18),transparent 40%),
+                        radial-gradient(circle at 90% 85%,rgba(22,163,127,.16),transparent 40%)}
+  .en{display:block;font-family:var(--en);color:var(--muted);font-size:.9em;font-weight:500}
+
+  .wrap{max-width:430px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom));
+        display:flex;flex-direction:column;gap:10px}
+  .glass{background:var(--panel);border:1px solid var(--edge);border-radius:22px;
+         -webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);
+         box-shadow:0 10px 30px rgba(20,24,43,.08)}
+
+  .card{padding:22px 18px 18px;text-align:center}
+  .av{width:72px;height:72px;margin:0 auto;border-radius:50%;position:relative;overflow:hidden;display:grid;place-items:center;
+      background:#dfe4fb;border:3px solid #fff;box-shadow:0 4px 14px rgba(59,76,202,.25);font:700 20px/1 var(--en);color:var(--indigo)}
+  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .name{margin-top:10px;font:700 18px/1.2 var(--en)}
+  .tag{display:inline-block;margin-top:6px;font:600 11px/1 var(--en);letter-spacing:1px;color:var(--mint);background:rgba(22,163,127,.1);padding:6px 10px;border-radius:999px}
+
+  h1{margin-top:14px;font-size:18px;line-height:1.5;font-weight:700;text-wrap:balance}
+  h1 .en{font-size:20px;color:var(--text);font-weight:700;margin-top:4px;line-height:1.3}
+
+  .learn{list-style:none;margin-top:14px;display:grid;gap:0;text-align:left;border-top:1px solid var(--line)}
+  .learn li{display:flex;gap:11px;align-items:center;padding:10px 2px;border-bottom:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--soft)}
+  .learn .en{font-size:12.5px;font-weight:500}
+  .tick{flex:0 0 auto;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--mint)}
+
+  .cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:16px;padding:15px 14px;border-radius:14px;
+       text-decoration:none;color:#fff;font:700 17px/1.3 var(--en);background:var(--indigo);
+       box-shadow:0 8px 20px rgba(59,76,202,.3);transition:transform .15s,background .15s}
+  .cta:hover{background:var(--indigo-d)}
+  .cta:active{transform:scale(.97)}
+  .cta:focus-visible{outline:3px solid rgba(59,76,202,.4);outline-offset:3px}
+
+  .timer{display:flex;align-items:center;justify-content:center;gap:11px;margin-top:12px;font-size:13px;color:var(--soft);text-align:left}
+  .ring{width:38px;height:38px;position:relative;flex:0 0 auto}
+  .ring svg{transform:rotate(-90deg)}
+  .ring .bg{stroke:rgba(20,24,43,.1)}
+  .ring .fg{stroke:var(--indigo);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+  .ring b{position:absolute;inset:0;display:grid;place-items:center;font:700 14px/1 var(--en);color:var(--indigo)}
+  .free{margin-top:8px;font:12px/1.4 var(--en);color:var(--muted)}
+
+  .disc{padding:11px 13px;font-size:10.5px;line-height:1.65;color:var(--soft);border-radius:16px}
+  .disc b{color:var(--text)} .disc p+p{margin-top:5px}
+  .foot{text-align:center;font:11px/1.6 var(--en);color:var(--muted);padding:2px 6px}
+  .foot a{color:var(--muted)}
+
+  @media(prefers-reduced-motion:reduce){.ring .fg{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <main class="card glass">
+    <div class="av"><img src="https://github.com/gt260856-netizen/Munaf-Logo-2/releases/download/munaf/WhatsApp.Image.2026-05-29.at.05.18.54.jpeg" alt="Trade With Munaaf" width="72" height="72" fetchpriority="high" onerror="this.remove()">TM</div>
+    <div class="name">Trade With Munaaf</div>
+    <span class="tag">FREE LEARNING CHANNEL</span>
+
+    <h1>ట్రేడింగ్ బేసిక్స్, సులభమైన తెలుగులో
+      <span class="en">Trading basics in simple Telugu</span></h1>
+
+    <ul class="learn">
+      <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><div>క్యాండిల్ విక్స్ అర్థం<span class="en">What candle wicks tell you</span></div></li>
+      <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><div>హయ్యర్ హై & హయ్యర్ లో<span class="en">Higher highs &amp; higher lows</span></div></li>
+      <li><span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><div>పొజిషన్ సైజ్ లెక్కించడం<span class="en">Calculating position size</span></div></li>
+    </ul>
+
+    <a href="#" class="cta js-cta">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.06-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+      Join Free Telegram Channel
+    </a>
+
+    <div class="timer js-timer-line">
+      <div class="ring">
+        <svg width="38" height="38" viewBox="0 0 44 44">
+          <circle class="bg" cx="22" cy="22" r="19" fill="none" stroke-width="4"/>
+          <circle class="fg js-ring" cx="22" cy="22" r="19" fill="none" stroke-width="4" stroke-dasharray="119.4" stroke-dashoffset="0"/>
+        </svg>
+        <b class="js-timer">8</b>
+      </div>
+      <div>Channel opens automatically</div>
+    </div>
+    <p class="free">100% Free • No payment • Leave anytime</p>
+  </main>
+
+  <div class="disc glass">
+    <p><b>నిరాకరణ:</b> ఇక్కడి కంటెంట్ మొత్తం విద్యా ప్రయోజనాల కోసం మాత్రమే. ఇది పెట్టుబడి సలహా లేదా కొనుగోలు/అమ్మకం సిఫార్సు కాదు. మేము SEBI నమోదిత సలహాదారులం కాదు. ట్రేడింగ్‌లో డబ్బు కోల్పోయే ప్రమాదం ఉంది.</p>
+    <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+  </div>
+
+  <div class="foot">
+    © <span id="yr"></span> Trade With Munaaf • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+    This site is not a part of the Facebook website or Meta Platforms, Inc.
+  </div>
+</div>
+
+<script>
+(function () {
+  // ================= SETTINGS =================
+  var TG_LINK = "https://t.me/+hy1sza1QrYoxOTM1";
+  var AUTO_REDIRECT = true;   // false = sirf button se Telegram khulega
+  var TIMER_SECONDS = 8;
+  var RETURN_DELAY_MS = 300;  // dobara aane wale ko kitni jaldi bhejna hai
+  var EVENT_DELAY_MS = 600;   // event bhejne ke baad redirect se pehle ka wait (slow network ke liye)
+  // ============================================
+
+  var KEY_VISITED = "rtt_visited", KEY_EVT = "rtt_sub";
+  var loadTime = Date.now();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  function setFlag(k){
+    try{localStorage.setItem(k,"1")}catch(e){}
+    document.cookie = k+"=1; max-age="+(60*60*24*180)+"; path=/; SameSite=Lax";
+  }
+  function hasFlag(k){
+    try{ if(localStorage.getItem(k)) return true }catch(e){}
+    return document.cookie.indexOf(k+"=1") !== -1;
+  }
+  function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
+  function isVisible(){ return document.visibilityState === "visible"; }
+
+  // TEST MODE: URL ke end me ?test lagao -> purane flags mit jayenge, har baar page normal khulega
+  if (/[?&]test\b/.test(location.search)) {
+    [KEY_VISITED, KEY_EVT].forEach(function(k){
+      try{localStorage.removeItem(k)}catch(e){}
+      document.cookie = k+"=; max-age=0; path=/; SameSite=Lax";
+    });
+  }
+
+  // Condition 1: asli interaction (touch / scroll / mouse / keyboard)
+  var interacted = false;
+  function markHuman(e){ if (e && e.isTrusted === false) return; interacted = true; }
+  ["pointerdown","touchstart","mousemove","keydown","wheel"].forEach(function(ev){
+    window.addEventListener(ev, markHuman, {passive:true, capture:true});
+  });
+  window.addEventListener("scroll", markHuman, {passive:true});
+
+  // Subscribe: sirf ek baar, bot filter ke saath
+  // source = "click" (button) ya "timer" (auto redirect)
+  // return true = event gaya
+  function fireEventOnce(e, source){
+    if (hasFlag(KEY_EVT)) return false;                 // Condition 4: pehle lag chuka
+    if (navigator.webdriver) return false;              // Condition 3: bot / automation
+    if (!interacted) return false;                      // Condition 1: koi asli interaction nahi
+    if (source === "click") {
+      if (Date.now() - loadTime < 800) return false;    // bahut jaldi click
+      if (e && e.isTrusted === false) return false;     // script se fake click
+    }
+    if (source === "timer" && !isVisible()) return false; // Condition 2: page screen par nahi
+    if (typeof fbq !== "function") return false;
+    fbq("track","Subscribe",{},{eventID:"rtt_sub_"+loadTime});
+    setFlag(KEY_EVT);
+    return true;
+  }
+
+  var cta = document.querySelector(".js-cta");
+  var timerLine = document.querySelector(".js-timer-line");
+  var timerEl = document.querySelector(".js-timer");
+  var ring = document.querySelector(".js-ring");
+  var C = 119.4, countdown, leaving = false;
+
+  cta.href = TG_LINK;
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (leaving) return;
+    leaving = true;
+    if (countdown) clearInterval(countdown);
+    var sent = fireEventOnce(e, "click");
+    setTimeout(goTelegram, sent ? EVENT_DELAY_MS : 300);
+  });
+
+  // Condition 5: returning visitor -> timer skip, turant Telegram, koi event nahi
+  if (hasFlag(KEY_VISITED)) {
+    timerLine.innerHTML = "<div>ఛానల్ ఓపెన్ అవుతోంది…<span class='en'>Opening channel…</span></div>";
+    setTimeout(goTelegram, RETURN_DELAY_MS);
+    return;
+  }
+
+  if (!AUTO_REDIRECT) { timerLine.style.display = "none"; return; }
+  var left = TIMER_SECONDS;
+  function paint(){
+    timerEl.textContent = left;
+    ring.style.strokeDashoffset = (C * (1 - left / TIMER_SECONDS)).toFixed(1);
+  }
+  paint();
+  // Condition 2: page chhupa ho (doosra app/tab) to timer ruk jata hai
+  countdown = setInterval(function(){
+    if (!isVisible() || leaving) return;
+    left--; paint();
+    if (left <= 0){
+      clearInterval(countdown);
+      leaving = true;
+      var sent = fireEventOnce(null, "timer");
+      setTimeout(goTelegram, sent ? EVENT_DELAY_MS : 0);
+    }
+  }, 1000);
+})();
+</script>
+</body>
+</html>
